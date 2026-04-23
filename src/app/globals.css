@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import "suneditor/dist/css/suneditor.min.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), "Space Grotesk", system-ui, sans-serif;
+}
+
+.scanlines {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  mix-blend-mode: soft-light;
+  opacity: 0.35;
+}
+
+.neon-card {
+  background: linear-gradient(
+    140deg,
+    rgba(15, 23, 42, 0.72),
+    rgba(15, 23, 42, 0.4)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 0 30px rgba(59, 130, 246, 0.12),
+    inset 0 0 18px rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+}
+
+.neon-pill {
+  background: linear-gradient(
+    90deg,
+    rgba(56, 189, 248, 0.25),
+    rgba(249, 115, 22, 0.25)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.float-slow {
+  animation: float-slow 9s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.shimmer {
+  background-size: 200% 200%;
+  animation: shimmer 8s linear infinite;
+}
+
+.sun-editor-editable.readable-content {
+  font-family: var(--font-editor), Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgb(17 24 39);
+}
+
+.sun-editor-editable.readable-content p,
+.sun-editor-editable.readable-content li,
+.sun-editor-editable.readable-content blockquote {
+  line-height: 1.8;
+}

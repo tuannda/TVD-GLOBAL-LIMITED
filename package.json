@@ -1,0 +1,34 @@
+{
+  "name": "vietsf",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "setup": "node setup.js",
+    "emulators": "firebase emulators:start --only auth,firestore --import ./.firebase/emulators --export-on-exit",
+    "deploy:firebase": "firebase deploy --except hosting --project globalsoft-sf"
+  },
+  "dependencies": {
+    "firebase": "^12.9.0",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "suneditor": "^2.47.8",
+    "suneditor-react": "^3.6.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "firebase-admin": "^12",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

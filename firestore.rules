@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow any authenticated user to read and write pages
+    match /pages/{pageId} {
+      allow read: if true; // Allow anyone to read published pages
+      allow create, update, delete: if request.auth != null;
+    }
+  }
+}
