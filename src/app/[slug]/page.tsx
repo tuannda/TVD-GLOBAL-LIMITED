@@ -53,13 +53,13 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     const title = String(data.title ?? "");
 
     return {
-      title: `${title} | GlobalSoft`,
+      title: `${title} | TVD GLOBAL LIMITED`,
       description: `Read about ${title}`,
     };
   } catch (err) {
     console.error("Error generating metadata:", err);
     return {
-      title: "GlobalSoft",
+      title: "TVD GLOBAL LIMITED",
     };
   }
 }

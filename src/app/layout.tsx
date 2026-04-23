@@ -22,8 +22,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GlobalSoft - Simplifying Software Solutions",
-  description: "GlobalSoft is a simple",
+  title: "TVD GLOBAL LIMITED - Simplifying Software Solutions",
+  description: "TVD GLOBAL LIMITED is a simple",
 };
 
 export default function RootLayout({

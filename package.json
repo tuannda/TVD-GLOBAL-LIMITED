@@ -9,7 +9,7 @@
     "lint": "eslint",
     "setup": "node setup.js",
     "emulators": "firebase emulators:start --only auth,firestore --import ./.firebase/emulators --export-on-exit",
-    "deploy:firebase": "firebase deploy --except hosting --project globalsoft-sf"
+    "deploy:firebase": "firebase deploy --except hosting --project tvd-global-limited"
   },
   "dependencies": {
     "firebase": "^12.9.0",

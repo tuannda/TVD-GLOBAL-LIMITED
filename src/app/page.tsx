@@ -9,7 +9,9 @@ export default function Home() {
         className="mx-auto flex min-h-screen max-w-4xl flex-col items-center justify-center gap-6 px-6 py-16 text-center"
       >
         <div className="space-y-4">
-          <h1 className="text-5xl font-bold tracking-tight">GlobalSoft</h1>
+          <h1 className="text-5xl font-bold tracking-tight">
+            TVD GLOBAL LIMITED
+          </h1>
           <p className="text-lg text-gray-600">
             Welcome to our platform. A modern solution for managing your
             content.

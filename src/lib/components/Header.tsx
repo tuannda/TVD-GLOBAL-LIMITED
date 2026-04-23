@@ -9,9 +9,9 @@ export default function Header() {
         {/* Logo */}
         <Link href="/#home" className="flex items-center gap-3">
           <div className="h-10 w-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-            GS
+            TVD
           </div>
-          <span className="font-bold text-lg">GlobalSoft</span>
+          <span className="font-bold text-lg">TVD GLOBAL LIMITED</span>
         </Link>
 
         {/* Menu */}
